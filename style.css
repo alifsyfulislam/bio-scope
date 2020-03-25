@@ -28,6 +28,14 @@ body, html{
     top: 0px;
     left: 0px;
 }
+
+.patch_des{
+    height: 19px;
+    width: 204px;
+    background-image: url("img/text2.png");
+    left: 48px;
+    top: 53px;
+}
 .patch_slider{
     top: 113px;
     left: 113px;
@@ -39,13 +47,26 @@ body, html{
     top: 75px;
     left: 55px;
     background-image: url("img/bioscope.png");
+    transition: all 1s linear;
+    z-index: 3;
+}
+
+.patch_board.animate {
+    height: 250px;
+    width: 300px;
+    top: 0px;
+    left: 0px;
 }
 .patch_board_right{
+    z-index: 2;
+	background-image: url("img/bioscope_covered.png");
     left: -63px;
     transform: perspective(800px) rotateY(-75deg) scale(.9);
 }
 
 .patch_board_left{
+    z-index: 1;
+	background-image: url("img/bioscope_covered.png");
     left: 174px;
     transform: perspective(800px) rotateY(75deg) scale(.9);
 }
